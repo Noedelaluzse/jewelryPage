@@ -283,6 +283,7 @@ img {
   margin-top: 5rem;
 }
 
+
 .section__title__container {
   display: flex;
   flex-direction: column;
@@ -317,67 +318,41 @@ img {
   background-color: var(--dotColor);
 }
 
-.best {
-  display: flex;
-  align-items: center;
-}
-
-.best__content,
-.best__image {
-  width: 50%;
-}
-
-.best__image {
+.road {
+  min-height: 180rem;
+  /* Ajusta este valor según sea necesario */
   position: relative;
 }
 
-.best__image::before {
-  position: absolute;
-  content: "";
-  width: 1269px;
-  height: 1232px;
-  top: -55px;
-  left: -108%;
-  right: 40px;
-  background-repeat: no-repeat;
-  background-image: url(https://res.cloudinary.com/dqvcmjkue/image/upload/v1738727989/croo_calgav.png);
-}
-
-.best__image__figure {
+.step {
   display: flex;
+}
+
+.step__contet,
+.step__image {
+  width: 50%;
+  position:relative;
+}
+
+
+
+.step__contet, .step__contet--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: end;
-  justify-content: end;
+  gap: 2rem;
 }
 
-
-.best__image__figure img {
-  width: 90%;
-  border: #eec668 solid 31px;
-  border-radius: 258px;
+.step__contet--right {
+  align-items: start;
 }
 
-.best__image__title {
-  color: #fff;
-  bottom: 74px;
-  position: absolute;
-  left: 230px;
-  right: 0;
-  font-size: 20px;
-  font-family: var(--fontFamily);
-  font-weight: 500;
-}
-
-.best__content p {
-
-  font-size: 17px;
-  line-height: 28px;
-  color: #595959;
-  padding-bottom: 50px;
-  font-family: var(--fontFamily);
+.step__contet p {
+  line-height: 1.5;
   font-weight: 300;
 }
-
-.best__content a {
+.step__contet a {
   background: #000;
   border: #ebbf60 solid 3px;
   width: 190px;
@@ -391,10 +366,66 @@ img {
   float: right;
 }
 
-.road {
-  min-height: 120rem;
-  /* Ajusta este valor según sea necesario */
+.step__image {
   position: relative;
+}
+.step__image-reverse {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.step__image figure img{
+  border: #eec668 solid 31px;
+  border-radius: 258px;
+}
+.step__image h4 {
+  position: absolute;
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--white);
+  bottom: 100px;
+  left: 172px;
+}
+
+.road__image,
+.road__image-reverse {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.road__image::before {
+  position: absolute;
+  content: "";
+  width: 1269px;
+  height: 1232px;
+  top: -55px;
+  right: 40px;
+  background-repeat: no-repeat;
+  background-image: url(https://res.cloudinary.com/dqvcmjkue/image/upload/v1738727989/croo_calgav.png);
+}
+.road__image-reverse::before {
+  position: absolute;
+  content: "";
+  width: 1269px;
+  height: 1232px;
+  top: 50px;
+  right: 40px;
+  background-repeat: no-repeat;
+  background-image: url(https://res.cloudinary.com/dqvcmjkue/image/upload/v1738727989/croo1_nhtmm4.png);
+}
+
+
+.centering {
+margin-top: 100px;
+margin-left: -149px
+}
+
+.figure {
+  margin: 0;
+}
+.road__image-none {
+  margin-top: 155px;
 }
 
 /* Contact */
