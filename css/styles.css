@@ -255,6 +255,7 @@ img {
     font-size: 2.5rem;
     max-width: 40rem;
     /* Ajusta al ancho deseado */
+    text-align: left;
 
   }
 }
@@ -611,7 +612,7 @@ img {
 /* information */
 
 .information {
-  margin-top: 10rem;
+  margin-top: 5rem;
   background-color: var(--goldenSun);
 }
 
