@@ -2,7 +2,7 @@
 
 A modern and responsive landing page for a jewellery store, built using **HTML**, **CSS**, and **JavaScript**.
 
-> **📌 Disclaimer:** This design is **not originally mine**, it was inspired by a template from **Freepik**.
+> **📌 Disclaimer:** This design is **not originally mine**, it was inspired by a template from **plantillashtmlgratis.com **.
 
 ## 🚀 Features
 
@@ -36,5 +36,5 @@ A modern and responsive landing page for a jewellery store, built using **HTML**
 
 ## 🎨 Credits
 
-- **Design Inspiration**: [Freepik](https://www.freepik.com)
+- **Design Inspiration**: [PlantillasGratis](plantillashtmlgratis.com )
 - **Images**: Hosted on Cloudinary
