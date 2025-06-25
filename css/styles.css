@@ -773,3 +773,115 @@ img {
   line-height: 22px;
   text-align: center;
 }
+
+/* Animacion */
+/* Animación de entrada para los enlaces del menú */
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navigation__link {
+  opacity: 0;
+  animation: fadeSlideDown 0.6s ease forwards;
+}
+
+/* Aplica delay en cascada a cada enlace */
+.header__navigation .navigation__link:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.header__navigation .navigation__link:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.header__navigation .navigation__link:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.header__navigation .navigation__link:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.navigation__link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.navigation__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #bfa77a; /* Puedes cambiar el color dorado */
+  transition: width 0.3s ease;
+}
+
+.navigation__link:hover {
+  color: #bfa77a; /* Cambia también el color del texto si quieres */
+}
+
+.navigation__link:hover::after {
+  width: 100%;
+}
+
+.header__title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: letterFadeIn 0.6s forwards;
+}
+
+.header__title span:nth-child(1) { animation-delay: 0.05s; }
+.header__title span:nth-child(2) { animation-delay: 0.10s; }
+.header__title span:nth-child(3) { animation-delay: 0.15s; }
+.header__title span:nth-child(4) { animation-delay: 0.20s; }
+.header__title span:nth-child(5) { animation-delay: 0.25s; }
+.header__title span:nth-child(6) { animation-delay: 0.30s; }
+.header__title span:nth-child(7) { animation-delay: 0.35s; }
+.header__title span:nth-child(8) { animation-delay: 0.40s; }
+.header__title span:nth-child(9) { animation-delay: 0.45s; }
+
+@keyframes letterFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+/* Animación de izquierda a derecha */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  opacity: 0;
+  animation: slideInLeft 0.8s ease forwards;
+}
